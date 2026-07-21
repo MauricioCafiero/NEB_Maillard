@@ -1,0 +1,17 @@
+W0720 14:50:12.731000 35767 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:root:If 'dataset_list' is provided in the config, the code assumes that each dataset maps to itself. Please use 'dataset_mapping' as 'dataset_list' is deprecated and will be removed in the future.
+Computing UMA vibrational frequencies for 44 atoms (265 force evaluations, delta=0.02 Å) ...
+Imaginary modes (< -10 cm^-1): 0
+=> No imaginary modes: this is a minimum, not a transition state.
+
+Lowest frequencies (cm^-1):
+  -0.00
+  -0.00
+  -0.00
+  -0.00
+   6.22
+   9.67
+   15.28
+   15.80
+
+Full spectrum written to output/seg1b/ts1_freq.txt

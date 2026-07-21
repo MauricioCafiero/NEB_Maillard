@@ -1,0 +1,17 @@
+Before relaxation:
+  C10-N27 : 1.280 A   (imine double ~1.28)
+  C10-O4  : 3.200 A   (broken, >2.5)
+  O4-H37  : 0.968 A   (water O-H ~0.96)
+  O4-H36  : 0.960 A   (water O-H ~0.96)
+  N27-H36 : 4.735 A   (transferred, >2)
+  perceived bonds on C10: 8(C), 11(C), 27(N)
+
+After GFN2-xTB relaxation:
+  C10-N27 : 1.260 A   (imine double ~1.28)
+  C10-O4  : 3.339 A   (broken, >2.5)
+  O4-H37  : 0.961 A   (water O-H ~0.96)
+  O4-H36  : 0.960 A   (water O-H ~0.96)
+  N27-H36 : 4.174 A   (transferred, >2)
+  perceived bonds on C10: 8(C), 11(C), 27(N)
+
+Wrote output/imine_product_relaxed.xyz

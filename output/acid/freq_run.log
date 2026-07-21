@@ -1,0 +1,13 @@
+Computing vibrational frequencies for 47 atoms (282 force evaluations) ...
+Imaginary modes (< -10 cm^-1): 0
+=> No imaginary modes: this is a minimum, not a transition state.
+
+Imaginary / lowest frequencies (cm^-1):
+  -0.00
+  -0.00
+  -0.00
+  -0.00
+  -0.00
+  -0.00
+
+Full spectrum written to output/acid/frequencies_ts.txt

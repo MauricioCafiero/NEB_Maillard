@@ -1,0 +1,28 @@
+16 images. endpoint0 E=-2292.0907 endpoint1 E=-2291.0708 (23.5 kcal apart). Hookean O4(4)-Os(44) rt=3.5 kh=5.0
+NEB pre-relaxation (FIRE, fmax=0.05, max 2000) ...
+CI-NEB (climbing image on, fmax=0.05, max 2000) ...
+---- Energy profile (eV) ----
+  image  0: -2292.090718  (   0.00 kcal)
+  image  1: -2292.129049  (  -0.88 kcal)
+  image  2: -2292.075056  (   0.36 kcal)
+  image  3: -2291.717091  (   8.62 kcal)
+  image  4: -2289.184018  (  67.03 kcal)
+  image  5: -2287.619631  ( 103.11 kcal)
+  image  6: -2286.275596  ( 134.10 kcal)
+  image  7: -2284.725641  ( 169.84 kcal)
+  image  8: -2285.939007  ( 141.86 kcal)
+  image  9: -2276.603918  ( 357.13 kcal)  <-- TS
+  image 10: -2283.491411  ( 198.30 kcal)
+  image 11: -2286.762150  ( 122.88 kcal)
+  image 12: -2286.882662  ( 120.10 kcal)
+  image 13: -2290.397757  (  39.04 kcal)
+  image 14: -2290.983825  (  25.53 kcal)
+  image 15: -2291.070810  (  23.52 kcal)
+---- Summary ----
+  Reactant : -2292.0907 eV
+  Product  : -2291.0708 eV
+  TS (img 9) : -2276.6039 eV  (357.13 kcal/mol)
+  Forward barrier : 357.13 kcal/mol
+  Reverse barrier : 333.61 kcal/mol
+
+TS written to output/acid/neb4/ts_structure.xyz

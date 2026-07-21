@@ -1,0 +1,36 @@
+<frozen runpy>:128: RuntimeWarning: 'neb_ts.neb_run' found in sys.modules after import of package 'neb_ts', but prior to execution of 'neb_ts.neb_run'; this may result in unpredictable behaviour
+Relaxing reactant (fmax=0.05 eV/Å) ...
+  reactant done: E=-2152.705330 eV, max|F|=0.0373
+Relaxing product (fmax=0.05 eV/Å) ...
+  product done: E=-2153.638362 eV, max|F|=0.0491
+IDPP initial path written (17 images).
+NEB relaxation (FIRE, fmax=0.05 eV/Å, max 1000 steps) ...
+  NEB pre-relaxation done.
+CI-NEB refinement (climbing image on, fmax=0.05 eV/Å, max 1000 steps) ...
+---- Energy profile (eV) ----
+  image  0: -2152.705330  (Δ= 0.000000)  <-- TS
+  image  1: -2152.746953  (Δ=-0.041623)
+  image  2: -2152.781474  (Δ=-0.076144)
+  image  3: -2152.720847  (Δ=-0.015516)
+  image  4: -2152.848018  (Δ=-0.142688)
+  image  5: -2152.766738  (Δ=-0.061408)
+  image  6: -2153.087967  (Δ=-0.382637)
+  image  7: -2153.615418  (Δ=-0.910087)
+  image  8: -2153.513168  (Δ=-0.807838)
+  image  9: -2153.226538  (Δ=-0.521207)
+  image 10: -2153.309866  (Δ=-0.604535)
+  image 11: -2153.747387  (Δ=-1.042057)
+  image 12: -2153.495117  (Δ=-0.789786)
+  image 13: -2153.555514  (Δ=-0.850184)
+  image 14: -2153.614594  (Δ=-0.909263)
+  image 15: -2153.732550  (Δ=-1.027220)
+  image 16: -2153.638362  (Δ=-0.933031)
+---- Summary ----
+  Reactant energy : -2152.705330 eV
+  Product  energy : -2153.638362 eV
+  TS energy (img 0) : -2152.705330 eV
+  Forward barrier : 0.0000 eV  (0.00 kcal/mol)
+  Reverse barrier : 0.9330 eV  (21.52 kcal/mol)
+  Reaction energy : -0.9330 eV  (-21.52 kcal/mol)
+
+Transition state written to output/ts_structure.xyz

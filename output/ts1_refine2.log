@@ -1,0 +1,24 @@
+endpoint 0: E=-2153.6384 eV   endpoint 1: E=-2152.9322 eV  (16.3 kcal/mol apart)
+NEB pre-relaxation (12 images, FIRE, fmax=0.05, max 1500 steps) ...
+CI-NEB (climbing image on, fmax=0.05, max 1500 steps) ...
+---- Energy profile (eV) ----
+  image  0: -2153.638362  (d= 0.000000,    0.00 kcal)
+  image  1: -2153.723037  (d=-0.084675,   -1.95 kcal)
+  image  2: -2153.670349  (d=-0.031987,   -0.74 kcal)
+  image  3: -2153.504107  (d= 0.134255,    3.10 kcal)
+  image  4: -2153.484887  (d= 0.153474,    3.54 kcal)
+  image  5: -2153.376327  (d= 0.262035,    6.04 kcal)
+  image  6: -2149.373672  (d= 4.264690,   98.35 kcal)
+  image  7: -2149.338983  (d= 4.299379,   99.15 kcal)
+  image  8: -2146.567879  (d= 7.070483,  163.05 kcal)
+  image  9: -2134.908310  (d= 18.730051,  431.92 kcal)  <-- TS
+  image 10: -2150.166212  (d= 3.472150,   80.07 kcal)
+  image 11: -2152.932227  (d= 0.706135,   16.28 kcal)
+---- Summary ----
+  Reactant : -2153.6384 eV
+  Product  : -2152.9322 eV
+  TS (img 9) : -2134.9083 eV
+  Forward barrier : 18.7301 eV (431.92 kcal/mol)
+  Reverse barrier : 18.0239 eV (415.64 kcal/mol)
+
+TS written to output/ts1/ts_structure.xyz

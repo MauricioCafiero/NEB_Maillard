@@ -1,0 +1,38 @@
+<frozen runpy>:128: RuntimeWarning: 'neb_ts.neb_run' found in sys.modules after import of package 'neb_ts', but prior to execution of 'neb_ts.neb_run'; this may result in unpredictable behaviour
+Backend: tblite
+Initial-path interpolation: geodesic
+Relaxing reactant (fmax=0.05 eV/Å) ...
+  reactant done: E=-2152.705330 eV, max|F|=0.0373
+Relaxing product (fmax=0.05 eV/Å) ...
+  product done: E=-2153.638362 eV, max|F|=0.0491
+Geodesic initial path written (17 images).
+NEB relaxation (FIRE, fmax=0.05 eV/Å, max 400 steps) ...
+  NEB pre-relaxation done.
+CI-NEB refinement (climbing image on, fmax=0.05 eV/Å, max 400 steps) ...
+---- Energy profile (eV) ----
+  image  0: -2152.705330  (Δ= 0.000000)  <-- TS
+  image  1: -2152.736272  (Δ=-0.030941)
+  image  2: -2152.762633  (Δ=-0.057302)
+  image  3: -2152.875138  (Δ=-0.169807)
+  image  4: -2152.803776  (Δ=-0.098446)
+  image  5: -2152.734851  (Δ=-0.029521)
+  image  6: -2153.347515  (Δ=-0.642185)
+  image  7: -2153.619866  (Δ=-0.914536)
+  image  8: -2153.729387  (Δ=-1.024056)
+  image  9: -2153.730463  (Δ=-1.025133)
+  image 10: -2153.672220  (Δ=-0.966889)
+  image 11: -2153.625356  (Δ=-0.920026)
+  image 12: -2153.550143  (Δ=-0.844812)
+  image 13: -2153.720339  (Δ=-1.015008)
+  image 14: -2153.702125  (Δ=-0.996795)
+  image 15: -2153.700679  (Δ=-0.995349)
+  image 16: -2153.638362  (Δ=-0.933031)
+---- Summary ----
+  Reactant energy : -2152.705330 eV
+  Product  energy : -2153.638362 eV
+  TS energy (img 0) : -2152.705330 eV
+  Forward barrier : 0.0000 eV  (0.00 kcal/mol)
+  Reverse barrier : 0.9330 eV  (21.52 kcal/mol)
+  Reaction energy : -0.9330 eV  (-21.52 kcal/mol)
+
+Transition state written to output/geodesic/ts_structure.xyz

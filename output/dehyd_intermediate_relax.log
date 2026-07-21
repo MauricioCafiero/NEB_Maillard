@@ -1,0 +1,17 @@
+Before relaxation:
+  C10-N27 : 1.263 A
+  N27-H37 : 4.226 A
+  H37-O4  : 0.959 A
+  N27...O4: 3.448 A
+  angle N27-H37-O4 : 148.2 deg  (180 = linear H-bond)
+  C10=O4  : 3.580 A  (aldehyde ~1.21)
+
+After GFN2-xTB relaxation:
+  C10-N27 : 1.263 A
+  N27-H37 : 4.226 A
+  H37-O4  : 0.959 A
+  N27...O4: 3.448 A
+  angle N27-H37-O4 : 148.2 deg  (180 = linear H-bond)
+  C10=O4  : 3.580 A  (aldehyde ~1.21)
+
+Wrote output/dehyd/intermediate.xyz

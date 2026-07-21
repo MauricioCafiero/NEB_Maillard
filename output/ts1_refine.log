@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/ase.py", line 398, in calculate
+    self._res = self._xtb.singlepoint(self._res)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/interface.py", line 682, in singlepoint
+    library.get_singlepoint(self._ctx, self._mol, self._calc, _res._res)
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/library.py", line 109, in handle_context_error
+    raise TBLiteRuntimeError(ffi.string(_message).decode())
+tblite.exceptions.TBLiteRuntimeError: SCF not converged in 500 cycles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/cafierom/python_mac/neb/neb_ts/calculator.py", line 36, in calculate
+    return super().calculate(atoms, properties, system_changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/ase.py", line 400, in calculate
+    raise ase.calculators.calculator.CalculationFailed(str(e)) from e
+ase.calculators.calculator.CalculationFailed: SCF not converged in 500 cycles
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/ase.py", line 398, in calculate
+    self._res = self._xtb.singlepoint(self._res)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/interface.py", line 682, in singlepoint
+    library.get_singlepoint(self._ctx, self._mol, self._calc, _res._res)
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/library.py", line 109, in handle_context_error
+    raise TBLiteRuntimeError(ffi.string(_message).decode())
+tblite.exceptions.TBLiteRuntimeError: SCF not converged in 500 cycles
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/cafierom/python_mac/neb/neb_ts/refine_ts1_neb.py", line 115, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/cafierom/python_mac/neb/neb_ts/refine_ts1_neb.py", line 84, in main
+    opt_ci.run(fmax=args.fmax, steps=args.max_steps)
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/optimize/optimize.py", line 506, in run
+    return Dynamics.run(self, steps=steps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/optimize/optimize.py", line 375, in run
+    for converged in Dynamics.irun(self, steps=steps):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/optimize/optimize.py", line 348, in irun
+    gradient = self.optimizable.get_gradient()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/mep/neb.py", line 269, in get_gradient
+    return -self.neb.get_forces().ravel()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/mep/neb.py", line 771, in get_forces
+    forces = super().get_forces()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/mep/neb.py", line 474, in get_forces
+    forces[i - 1] = images[i].get_forces()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/atoms.py", line 2015, in get_forces
+    forces = self._calc.get_forces(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/calculators/abc.py", line 31, in get_forces
+    return self.get_property('forces', atoms)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/ase/calculators/calculator.py", line 517, in get_property
+    self.calculate(atoms, [name], system_changes)
+  File "/Users/cafierom/python_mac/neb/neb_ts/calculator.py", line 48, in calculate
+    return super().calculate(atoms, properties, system_changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cafierom/python_mac/neb/.venv/lib/python3.12/site-packages/tblite/ase.py", line 400, in calculate
+    raise ase.calculators.calculator.CalculationFailed(str(e)) from e
+ase.calculators.calculator.CalculationFailed: SCF not converged in 500 cycles
+endpoint 0: E=-2153.5573 eV   endpoint 1: E=-2152.9322 eV  (14.4 kcal/mol apart)
+NEB pre-relaxation (12 images, FIRE, fmax=0.05, max 1500 steps) ...
+CI-NEB (climbing image on, fmax=0.05, max 1500 steps) ...

@@ -1,0 +1,10 @@
+W0720 14:49:05.225000 35740 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:root:If 'dataset_list' is provided in the config, the code assumes that each dataset maps to itself. Please use 'dataset_mapping' as 'dataset_list' is deprecated and will be removed in the future.
+Start: E=-34182.535634 eV (-788266.36 kcal ref not shown), max|F_perp|=0.0286 eV/A
+       max heavy-heavy = 11.42 A (reactant span ~11.3 A)
+Fixed-mode UMA optimization (FIRE, fmax=0.02, max 800 steps) ...
+End:   E=-34182.561910 eV, max|F_perp|=0.0200 eV/A, |F|along mode=0.0000 eV/A
+       max heavy-heavy = 11.47 A, dE = -0.61 kcal
+
+Refined TS written to output/seg1b/ts1_refined.xyz
+Verify with: python -m neb_ts.frequencies output/seg1b/ts1_refined.xyz

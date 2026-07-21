@@ -1,0 +1,10 @@
+W0720 11:06:22.732000 32828 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:root:If 'dataset_list' is provided in the config, the code assumes that each dataset maps to itself. Please use 'dataset_mapping' as 'dataset_list' is deprecated and will be removed in the future.
+Mode seed: net RC (output/uma_geodesic/intermediate_relaxed.xyz - output/reactant_mapped.xyz), |mode|=7.164 Å
+Start: E=-34182.561465 eV, max heavy-heavy=11.08 Å
+Dimer refinement (fmax=0.05 eV/Å, max 120 steps) ...
+  Dimer done: E=-34178.788358 eV, max|F|=0.9914, curvature=-0.4053
+
+Refined TS written to output/ts1/ts1_dimer_img11.xyz
+Refined max heavy-heavy = 11.52 Å (reactant span ~11.3 Å; >>13 = dissociation)
+Verify with: python -m neb_ts.frequencies_uma output/ts1/ts1_dimer_img11.xyz

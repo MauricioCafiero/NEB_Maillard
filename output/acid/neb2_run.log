@@ -1,0 +1,29 @@
+16 images.  endpoint0 E=-2292.0907  endpoint1 E=-2291.0708 (23.5 kcal/mol apart)
+NEB pre-relaxation (FIRE, fmax=0.05, max 2000 steps) ...
+CI-NEB (climbing image on, fmax=0.05, max 2000 steps) ...
+---- Energy profile (eV) ----
+  image  0: -2292.090718  (d= 0.000000,    0.00 kcal)
+  image  1: -2292.139080  (d=-0.048362,   -1.12 kcal)
+  image  2: -2292.145162  (d=-0.054444,   -1.26 kcal)
+  image  3: -2292.217359  (d=-0.126642,   -2.92 kcal)
+  image  4: -2292.003338  (d= 0.087380,    2.02 kcal)
+  image  5: -2291.984904  (d= 0.105814,    2.44 kcal)
+  image  6: -2291.863720  (d= 0.226998,    5.23 kcal)
+  image  7: -2291.388500  (d= 0.702217,   16.19 kcal)
+  image  8: -2286.680958  (d= 5.409759,  124.75 kcal)
+  image  9: -2286.704694  (d= 5.386024,  124.20 kcal)
+  image 10: -2290.582198  (d= 1.508520,   34.79 kcal)
+  image 11: -2284.608283  (d= 7.482435,  172.55 kcal)  <-- TS
+  image 12: -2285.752901  (d= 6.337817,  146.15 kcal)
+  image 13: -2290.833448  (d= 1.257269,   28.99 kcal)
+  image 14: -2290.994197  (d= 1.096521,   25.29 kcal)
+  image 15: -2291.070810  (d= 1.019907,   23.52 kcal)
+---- Summary ----
+  Reactant : -2292.0907 eV
+  Product  : -2291.0708 eV
+  TS (img 11) : -2284.6083 eV  (172.55 kcal/mol)
+  Forward barrier : 172.55 kcal/mol
+  Reverse barrier : 149.03 kcal/mol
+
+TS written to output/acid/neb2/ts_structure.xyz
+Final path written to output/acid/neb2/neb_final_path.xyz

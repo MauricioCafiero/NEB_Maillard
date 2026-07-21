@@ -1,0 +1,22 @@
+atoms: 44
+W0720 15:06:34.235000 36168 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:root:If 'dataset_list' is provided in the config, the code assumes that each dataset maps to itself. Please use 'dataset_mapping' as 'dataset_list' is deprecated and will be removed in the future.
+UMA single-point: E = -34182.593908 eV
+  max|F| = 0.3279 eV/A  (if ~0, structure is UMA-stationary)
+  vs reactant (-34183.140587): dE = +0.546679 eV = +12.61 kcal/mol
+  max heavy-heavy = 11.36 A (reactant span ~11.3 A; >>13 = dissociation)
+Computing UMA frequencies ...
+Imaginary modes (< -10 cm^-1): 0
+Lowest 10 freqs (cm^-1):
+  -0.00
+  -0.00
+  -0.00
+  -0.00
+   6.22
+   9.67
+   15.28
+   15.80
+   20.14
+   27.22
+Full spectrum: output/qst3_ts/ts_qst3_freq.txt
+=== DONE ===

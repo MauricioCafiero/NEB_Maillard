@@ -1,0 +1,43 @@
+<frozen runpy>:128: RuntimeWarning: 'neb_ts.neb_run' found in sys.modules after import of package 'neb_ts', but prior to execution of 'neb_ts.neb_run'; this may result in unpredictable behaviour
+W0720 15:56:26.894000 37050 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:root:If 'dataset_list' is provided in the config, the code assumes that each dataset maps to itself. Please use 'dataset_mapping' as 'dataset_list' is deprecated and will be removed in the future.
+Backend: uma ({'model': 'uma-s-1p1', 'task_name': 'omol', 'device': 'cpu'})
+Initial-path interpolation: geodesic
+Relaxing reactant (fmax=0.02 eV/Å) ...
+  reactant done: E=-34183.278941 eV, max|F|=0.0107
+Relaxing product (fmax=0.02 eV/Å) ...
+  product done: E=-34183.316993 eV, max|F|=0.0194
+Geodesic initial path written (20 images).
+NEB relaxation (FIRE, fmax=0.02 eV/Å, max 800 steps) ...
+  NEB pre-relaxation done.
+CI-NEB refinement skipped (climb=False).
+---- Energy profile (eV) ----
+  image  0: -34183.278941  (Δ= 0.000000)
+  image  1: -34183.264130  (Δ= 0.014811)
+  image  2: -34183.195502  (Δ= 0.083440)
+  image  3: -34183.234080  (Δ= 0.044861)
+  image  4: -34183.265720  (Δ= 0.013221)
+  image  5: -34183.224465  (Δ= 0.054477)
+  image  6: -34183.234931  (Δ= 0.044010)
+  image  7: -34183.224467  (Δ= 0.054475)
+  image  8: -34183.209287  (Δ= 0.069654)
+  image  9: -34181.747595  (Δ= 1.531346)
+  image 10: -34181.249548  (Δ= 2.029393)
+  image 11: -34181.217826  (Δ= 2.061116)  <-- TS
+  image 12: -34181.619066  (Δ= 1.659875)
+  image 13: -34181.795190  (Δ= 1.483751)
+  image 14: -34183.369783  (Δ=-0.090842)
+  image 15: -34182.131168  (Δ= 1.147773)
+  image 16: -34182.209184  (Δ= 1.069758)
+  image 17: -34182.226916  (Δ= 1.052025)
+  image 18: -34182.557061  (Δ= 0.721881)
+  image 19: -34183.316992  (Δ=-0.038051)
+---- Summary ----
+  Reactant energy : -34183.278941 eV
+  Product  energy : -34183.316993 eV
+  TS energy (img 11) : -34181.217826 eV
+  Forward barrier : 2.0611 eV  (47.53 kcal/mol)
+  Reverse barrier : 2.0992 eV  (48.41 kcal/mol)
+  Reaction energy : -0.0381 eV  (-0.88 kcal/mol)
+
+Transition state written to output/seg2_uma/ts_structure.xyz

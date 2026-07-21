@@ -1,0 +1,33 @@
+<frozen runpy>:128: RuntimeWarning: 'neb_ts.neb_run' found in sys.modules after import of package 'neb_ts', but prior to execution of 'neb_ts.neb_run'; this may result in unpredictable behaviour
+W0719 20:37:31.807000 21540 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+WARNING:root:If 'dataset_list' is provided in the config, the code assumes that each dataset maps to itself. Please use 'dataset_mapping' as 'dataset_list' is deprecated and will be removed in the future.
+Backend: uma ({'model': 'uma-s-1p1', 'task_name': 'omol', 'device': 'cpu'})
+Relaxing reactant (fmax=0.05 eV/Å) ...
+  reactant done: E=-34183.136678 eV, max|F|=0.0450
+Relaxing product (fmax=0.05 eV/Å) ...
+  product done: E=-34183.276747 eV, max|F|=0.0299
+IDPP initial path written (11 images).
+NEB relaxation (FIRE, fmax=0.05 eV/Å, max 250 steps) ...
+  NEB pre-relaxation done.
+CI-NEB refinement (climbing image on, fmax=0.05 eV/Å, max 250 steps) ...
+---- Energy profile (eV) ----
+  image  0: -34183.136677  (Δ= 0.000001)
+  image  1: -34183.141020  (Δ=-0.004343)
+  image  2: -34183.083240  (Δ= 0.053437)
+  image  3: -34177.476649  (Δ= 5.660029)
+  image  4: -34153.706077  (Δ= 29.430601)  <-- TS
+  image  5: -34176.195733  (Δ= 6.940944)
+  image  6: -34182.845614  (Δ= 0.291063)
+  image  7: -34183.213745  (Δ=-0.077068)
+  image  8: -34183.154093  (Δ=-0.017416)
+  image  9: -34183.198662  (Δ=-0.061985)
+  image 10: -34183.276747  (Δ=-0.140069)
+---- Summary ----
+  Reactant energy : -34183.136678 eV
+  Product  energy : -34183.276747 eV
+  TS energy (img 4) : -34153.706077 eV
+  Forward barrier : 29.4306 eV  (678.68 kcal/mol)
+  Reverse barrier : 29.5707 eV  (681.91 kcal/mol)
+  Reaction energy : -0.1401 eV  (-3.23 kcal/mol)
+
+Transition state written to output/uma/ts_structure.xyz

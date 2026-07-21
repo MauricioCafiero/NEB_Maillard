@@ -1,0 +1,6 @@
+Start: E=-2151.8886 eV, max|F_perp|=0.9485 eV/A
+Fixed-mode optimization (FIRE, fmax=0.02, max 800 steps) ...
+End:   E=-2153.2952 eV, max|F_perp|=0.0541 eV/A
+
+Refined TS written to output/seg2_gfn2/ts2_fixedmode.xyz
+Verify with: uv run python -m neb_ts.frequencies output/seg2_gfn2/ts2_fixedmode.xyz

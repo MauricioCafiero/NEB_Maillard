@@ -1,0 +1,5 @@
+Dimer refinement (fmax=0.05 eV/Å, max 400 steps) ...
+  Dimer done: E=-2150.958701 eV, max|F|=0.0349, curvature=-27.9294
+
+Refined transition state written to output/ts1_dimer/ts_refined.xyz
+Verify with: uv run python -m neb_ts.frequencies output/ts1_dimer/ts_refined.xyz
