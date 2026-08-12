@@ -2,8 +2,8 @@
 
 - **Zhu, Thompson & Martínez, "Geodesic interpolation for reaction pathways",
   *J. Chem. Phys.* 150, 164103 (2019), DOI 10.1063/1.5090303.**
-  Accepted manuscript (green open access, DOE PAGES / OSTI, biblio 1528918).
-  PDF: `Zhu_Thompson_Martinez_2019_geodesic_interpolation_JCP.pdf`
+  Accepted manuscript (green open access): DOI https://doi.org/10.1063/1.5090303
+  (also on DOE PAGES / OSTI, biblio 1528918).
 
   Used here as the initial-path generator for NEB (the `--interp geodesic`
   option in `neb_ts/neb_run.py`), via the `geodesic-interpolate` package
